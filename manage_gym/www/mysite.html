@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <title>
+           Fitness Club
+        </title>
+        <link rel="stylesheet" href="public/style.css">
+        <style>
+
+body {
+    background-color: rgb(107, 214, 222);
+  }
+ 
+
+  body {
+  background-image: url('image.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: 900px 700px;
+  background-position: right; 
+}
+
+
+h1 {
+    text-align: center;
+}
+
+
+a {
+    text-align: center;
+}
+
+
+
+a:link, a:visited {
+  background-color: hsl(337, 90%, 58%);
+  color: rgb(208, 197, 227);
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a+a {
+  margin-left: 80px;
+
+}
+
+
+h2{
+
+    color:hsl(253, 79%, 44%);
+}
+
+        </style>
+
+
+
+
+    </head>
+
+    <body>
+        <!-- <img src="gym.jpg" alt="Girl in a jacket" width="500" height="500"> -->
+
+<h1 style="background-color:rgb(191, 255, 71); " text>Welcome To My Fitness Clubs</h1>
+<br><br>
+<h2>list of Active plans in Fitness Club</h2>
+<ol>
+    {% for user in plan  %}
+        <li style="color: rgb(146, 17, 92);">{{ user.plan_name }}  </li>
+    {% endfor %}
+    </ol>
+    <br> <br><br> <br>
+
+ 
+ <a href="my_gym/new">Subscribe Me</a>
+ <a href="book-locker/new">Book Locker</a><br><br> <br><br> <br>
+ <a href="book-fitness-class/new">Book Fitness Class</a>
+ <a href="about" style="align-items: right;">About</a> 
+
+
+
+
+
+
+
+
+    </body>
+</html>

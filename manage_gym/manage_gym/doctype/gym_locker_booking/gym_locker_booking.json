@@ -1,0 +1,59 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "GL.####",
+ "creation": "2024-05-21 12:21:55.036156",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "locker_name",
+  "customer_name",
+  "date"
+ ],
+ "fields": [
+  {
+   "fieldname": "locker_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "locker name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer Name",
+   "options": "Gym Member"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-05-27 12:17:56.510423",
+ "modified_by": "Administrator",
+ "module": "manage_gym",
+ "name": "Gym Locker Booking",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
